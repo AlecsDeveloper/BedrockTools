@@ -6,7 +6,7 @@ const createWindow = () => {
         height: 600
     });
 
-    window.loadFile('index.html') // ruta de archivo html
+    window.loadFile('src/index.html') // ruta de archivo html
 }
 
 app.whenReady().then(() => {

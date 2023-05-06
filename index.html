@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self': script-src 'self">
-        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self': script-src 'self">
-        <title>Bedrock Tools</title>
-    </head>
-    <body>
-        <h1>ELECTRON PAPÁ</h1>
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <title>NBT Editor</title>
+  </head>
+  <body>
+    <h1>NBT Editor</h1>
+    <form>
+      <label for="filename">Filename:</label>
+      <input type="text" id="filename" name="filename">
+      <br>
+      <label for="tagValue">Tag value:</label>
+      <input type="text" id="tagValue" name="tagValue">
+      <br>
+      <button type="button" id="openButton">Open</button>
+      <button type="button" id="saveButton">Save</button>
+    </form>
+  </body>
 </html>

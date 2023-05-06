@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^24.2.0"
+  },
+  "dependencies": {
+    "nbt-js": "^0.1.0"
   }
 }

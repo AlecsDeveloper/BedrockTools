@@ -1,5 +1,5 @@
-const { dialog } = require('electron').remote;
-const nbt = require('nbtjs');
+const { dialog } = require('electron');
+// import { read, write } from 'nbtjs';
 
 const openButton = document.getElementById('openButton');
 const saveButton = document.getElementById('saveButton');
@@ -10,7 +10,7 @@ let filename = '';
 
 openButton.addEventListener('click', () => {
   // Abre un cuadro de diálogo para que el usuario seleccione un archivo NBT.
-  console.error("xd");
+  console.log("xd");
   dialog.showOpenDialog({
     properties: ['openFile'],
     filters: [{ name: 'NBT Files', extensions: ['nbt'] }]
@@ -19,7 +19,7 @@ openButton.addEventListener('click', () => {
     filename = result.filePaths[0];
     filenameInput.value = filename;
     // Lee el archivo NBT y muestra su valor en el campo de entrada.
-    nbt.read(filename, (error, data) => {
+    read(filename, (error, data) => {
       if (error) {
         console.error(error);
         return;
@@ -42,7 +42,7 @@ saveButton.addEventListener('click', () => {
     }
   };
   // Escribe los datos en el archivo NBT.
-  nbt.write(filename, data, (error) => {
+  write(filename, data, (error) => {
     if (error) {
       console.error(error);
       return;

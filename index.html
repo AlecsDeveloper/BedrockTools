@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>NBT Editor</title>
   </head>
+  <script src="renderer.js"></script>
   <body>
-    <h1>NBT Editor</h1>
-    <form>
-      <label for="filename">Filename:</label>
-      <input type="text" id="filename" name="filename">
-      <br>
-      <label for="tagValue">Tag value:</label>
-      <input type="text" id="tagValue" name="tagValue">
-      <br>
-      <button type="button" id="openButton">Open</button>
-      <button type="button" id="saveButton">Save</button>
-    </form>
+    <div>
+      <label for="filename">Archivo:</label>
+      <input type="text" id="filename" disabled>
+      <button id="openButton">Open</button>
+    </div>
+    <div>
+      <label for="tagValue">Valor:</label>
+      <input type="text" id="tagValue">
+      <button id="saveButton">Save</button>
+    </div>
   </body>
 </html>
